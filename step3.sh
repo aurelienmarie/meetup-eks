@@ -7,5 +7,5 @@ do
   if [ $nod == NAME ]; then 
     continue 
   fi
-    kubectl taint nodes $nod special=false:NoSchedule
+    kubectl taint nodes $nod meetup=false:NoSchedule
 done

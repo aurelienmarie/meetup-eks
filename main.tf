@@ -59,7 +59,7 @@ locals {
     {
       instance_type       = "m5.large"
       additional_userdata = "echo foo bar"
-      kubelet_extra_args = "--register-with-taints=special=true:NoSchedule"
+      kubelet_extra_args = "--register-with-taints=meetup=true:NoSchedule"
       subnets             = "${join(",", module.vpc.private_subnets)}"
     },
   ]
